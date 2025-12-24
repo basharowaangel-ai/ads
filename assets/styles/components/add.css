@@ -1,0 +1,84 @@
+.add__section {
+}
+
+form[add] {
+  input {
+    border: none;
+    border-radius: 10px;
+  }
+  input::placeholder {
+    color: #989898;
+  }
+  input:focus-visible {
+    outline: none;
+    border: 2px solid #ff006b;
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+
+.add__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (width >= 768px) {
+    flex-direction: row;
+  }
+}
+
+.file__wrapper {
+  width: 100%;
+
+  @media (width >= 768px) {
+    width: fit-content;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.text__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#add-name {
+  font-size: 36px;
+  color: #181818;
+  font-weight: 500;
+
+  @media (width >= 768px) {
+    font-size: 40px;
+    align-items: center;
+  }
+  @media (width >= 1200px) {
+    font-size: 48px;
+  }
+}
+
+#add-price,
+#add-desc {
+  font-size: 18px;
+  color: #181818;
+  font-weight: 400;
+}
+
+.add__button-and-alert {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+
+  button {
+    width: fit-content;
+  }
+
+  form[alert] {
+    margin-top: 0;
+  }
+}

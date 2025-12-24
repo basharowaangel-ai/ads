@@ -1,0 +1,47 @@
+/* Base */
+@import url("./reset.css");
+
+@import url("./components/header.css");
+@import url("./components/popover.css");
+
+@import url("./components/footer.css");
+
+/* Main page */
+@import url("./components/heading.css");
+@import url("./components/grid.css");
+
+/* Ad */
+@import url("./components/ad.css");
+
+/* Add */
+@import url("./components/add.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  width: 280px;
+  @media (width >= 768px) {
+    width: 688px;
+  }
+  @media (width > 1200px) {
+    width: 1200px;
+  }
+}
+
+main {
+  padding-inline: 20px;
+
+  @media (width >= 768px) {
+    padding-inline: 40px;
+  }
+  @media (width > 1200px) {
+    padding-inline: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}

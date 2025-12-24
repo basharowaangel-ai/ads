@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.(js|css|png|jpg|jpeg|gif|ico|svg)$ [NC]
+RewriteRule ^ - [L]
+
+RewriteRule ^ad/([0-9]+)$ ad.php?id=$1 [L,QSA]
+RewriteRule ^add/$ add.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Все остальное на index.php
+RewriteRule ^(.*)$ index.php [L]

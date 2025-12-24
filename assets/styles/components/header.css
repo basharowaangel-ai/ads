@@ -1,0 +1,60 @@
+header {
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+
+  @media (width < 768px) {
+    padding-block: 20px;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.logo h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #242424;
+
+  @media (width < 768px) {
+    display: none;
+  }
+}
+
+.header__buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  button[open-popover] {
+    font-size: 16px;
+    font-weight: 500;
+    color: #181818;
+  }
+
+  .hello {
+    display: inline-flex;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #181818;
+
+    span {
+      display: none;
+
+      @media(width >= 768px) {
+        display: block;
+      }
+    }
+  }
+
+  .logout {
+    font-size: 16px;
+    font-weight: 500;
+    color: #989898;
+  }
+}
