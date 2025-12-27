@@ -6,7 +6,7 @@
   align-items: center;
   margin-bottom: 30px;
 
-  @media(width >= 768px) {
+  @media (width >= 768px) {
     gap: 20px;
   }
 }
@@ -21,6 +21,13 @@
 
   div {
     padding-inline: 12px;
+
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 
   img {
@@ -31,7 +38,7 @@
   @media (width >= 768px) {
     max-width: 216px;
   }
-  @media(width > 1200px) {
+  @media (width > 1200px) {
     max-width: 224px;
   }
 }
